@@ -45,7 +45,7 @@ export function BasicFeatureSection() {
         <CTAContainer className="max-xl:sticky max-xl:top-12 max-lg:top-0 max-lg:relative">
           <CTAHeadline>End-to-End Meeting Intelligence & Automation</CTAHeadline>
           <CTADescription>
-            This isn't just meeting transcription—it's complete execution automation. 
+            This isn&apos;t just meeting transcription—it&apos;s complete execution automation. 
             CoNNIE AI transforms your meetings into clear, actionable insights—so you 
             never miss a key moment again.
           </CTADescription>
