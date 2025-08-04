@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply tracking-tight;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#cta-section {
+  background-color: white;
+  background-image: url('/media/cta-icons-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#cta-section {
+  @apply bg-cover max-lg:bg-contain;
+}
+
+@media screen and (max-width: 1024px) {
+  #cta-section {
+    background-image: url('/media/cta-icons-bg-small.svg');
+    background-position-y: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cta-section {
+    background-position-y: 12rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #cta-section {
+    background-position-y: 10rem;
+  }
+}
